@@ -1,4 +1,4 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 body {
   margin: 0;
   font-size: 1vw;
@@ -13,15 +13,15 @@ body {
   min-height: 100vh;
   justify-content: center;
   align-items: center;
+  gap: 30px;
 }
 
 .betContainer {
   display: flex;
   flex-direction: column;
-  border-radius: 1.4vw;
+  border-radius: 20px;
   background: #272d39;
-  padding: 2.3vw;
-  margin-right: 1.3vw;
+  padding: 30px;
   gap: 6px;
   align-items: center;
   color: #e0e1dd;
@@ -52,6 +52,7 @@ body {
   height: 3vw;
   border: none;
   border-radius: 0.5vw;
+  cursor: pointer;
 }
 .towerCell:hover {
     transform: rotateX(180deg) scale(1.05);
@@ -63,11 +64,12 @@ body {
   margin-right: 1vw;
 }
 
-#profileBalance{
-  margin-bottom: 1vw;
-  background: #0d1b2a;
-  padding: 0.5vw;
-  border-radius: 0.5vw;
+.betWrapper{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  font-weight: bold;
+
 }
 
 .mainButton {
@@ -82,6 +84,7 @@ body {
   height: 3vw;
   width: 100%;
   gap: 0.5vw;
+  cursor: pointer;
 }
 
 .mainButton:disabled{
@@ -140,6 +143,7 @@ body {
     background-color: rgba(135, 92, 92,0.40);
     height: 20vw;
     width: 20vw;
+    font-weight: bold;
 }
 
 .steps{
@@ -169,4 +173,10 @@ body {
 .sucess-solution
 {
     background-color:rgb(83 185 112 / 17%)
+}
+
+@media (max-width: 750px) {
+  .gameContainer{
+    flex-direction: column-reverse;
+  }
 }

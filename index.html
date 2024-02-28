@@ -9,25 +9,30 @@
 <body>
     <div id="root">
         <div class="gameContainer">
-            <div class="betContainer">
-                <div id="profileBalance">balance</div>
-               <div class="betItem">
-                <div class="placeholder">Сумма ставки <span>100</span></div>
-                <input min="10" oninput="this.parentElement.children[0].children[0].textContent = this.value" class="mainRange" type="range" id="betAmm"  value="100">
-               </div>
-              <div class="betItem">
-                <div class="placeholder">Количество мин <span>1</span></div>
-                <input min="1" max="4" oninput="this.parentElement.children[0].children[0].textContent = this.value" class="mainRange" type="range" id="minsAmm" value="1">
-              </div>
-              <button id="startGame" class="mainButton getStartButton">
-                Начать игру
-              </button>
-              <div id="steps" class="steps" style="display: none;">
-                Ваши шаги <span>0</span>
-              </div>
-              <button id="leaveButton" style="display: none;" class="mainButton LeaveButton">
-                Забрать <span>0</span>
-              </button>
+            <div class="betWrapper">
+
+                <div id="profileBalance" class="betContainer">balance</div>
+
+             <div class="betContainer">
+                <div class="betItem">
+                    <div class="placeholder">Сумма ставки <span>100</span></div>
+                    <input min="10" oninput="this.parentElement.children[0].children[0].textContent = this.value" class="mainRange" type="range" id="betAmm"  value="100">
+                   </div>
+                  <div class="betItem">
+                    <div class="placeholder">Количество мин <span>1</span></div>
+                    <input min="1" max="4" oninput="this.parentElement.children[0].children[0].textContent = this.value" class="mainRange" type="range" id="minsAmm" value="1">
+                  </div>
+                  <button id="startGame" class="mainButton getStartButton">
+                    Начать игру
+                  </button>
+                  <div id="steps" class="steps" style="display: none;">
+                    Ваши шаги <span>0</span>
+                  </div>
+                  <button id="leaveButton" style="display: none;" class="mainButton LeaveButton">
+                    Забрать <span>0</span>
+                  </button>
+             </div>
+
             </div>
             <div class="towerContainer">
                 <div id="coefsContainer" class="coeffs">
@@ -35,7 +40,7 @@
                 </div>
                 <div id="tower" class="towerArea">
                     <div class="blind" id="blind">
-                        Нажми играть чтобы начать игру
+                        Для начала игры - нажмите играть
                     </div>
                  
                 </div>
